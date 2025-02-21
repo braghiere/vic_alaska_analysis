@@ -6,7 +6,7 @@ This repository contains scripts and Jupyter notebooks for analyzing Variable In
 To set up the environment, clone this repository and install the necessary dependencies using Conda:
 
 ```sh
-git clone https://github.com/yourusername/vic_alaska_analysis.git
+git clone https://github.com/braghiere/vic_alaska_analysis.git
 cd vic_alaska_analysis
 conda env create -f environment.yml
 conda activate vic_env
@@ -19,7 +19,7 @@ conda env update --file environment.yml
 ```
 
 ## **Data Availability**
-The VIC model outputs, downscaled GCM meteorological data, and hydrological variables are archived and publicly available at NCAR Research Data Archive (RDA) (Mizukami et al., 2022). The dataset includes:
+The VIC model outputs, downscaled GCM meteorological data, and hydrological variables are archived and publicly available at **NCAR Research Data Archive (RDA)** (Mizukami et al., 2022). The dataset includes:
 
 - **Downscaled GCM meteorology**: Daily minimum and maximum temperatures and precipitation.
 - **VIC hydrological model outputs**:
@@ -27,13 +27,17 @@ The VIC model outputs, downscaled GCM meteorological data, and hydrological vari
   - **State variables**: Soil moisture, snow water equivalent, and ice water equivalent.
   - **Energy fluxes**: Shortwave and longwave radiation, latent and sensible heat fluxes, ground heat, and soil temperature.
 
-Due to storage limitations, the dataset is not included in this repository but can be downloaded from the DOI above.
+Due to storage limitations, the dataset is not included in this repository but can be downloaded from the following sources:
+
+- **VIC Model Outputs**: [NCAR RDA Dataset](https://rda.ucar.edu/)
+- **Downscaled GCM Meteorology**: [Dataset Link](https://rda.ucar.edu/)
+- **Hydrological Variables**: [Dataset Link](https://rda.ucar.edu/)
 
 ## **Code Availability**
 The VIC and downscaling codes used to generate the data are open-source:
 
-- **VIC hydrology model**: VIC 4.2 Glacier Version
-- **Bias-Corrected Spatially Disaggregated (BCSD) downscaling**: scikit-downscale
+- **VIC hydrology model**: [VIC 4.2 Glacier Version](https://github.com/UW-Hydro/VIC)
+- **Bias-Corrected Spatially Disaggregated (BCSD) downscaling**: [scikit-downscale](https://github.com/pangeo-data/scikit-downscale)
 
 ## **Usage**
 ### **Jupyter Notebooks**
